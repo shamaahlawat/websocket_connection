@@ -20,4 +20,9 @@ io.on('connection' , function(socket){ //when connect is detected then callback 
     socket.on('chat',function(data){ 
        io.sockets.emit('chat', data);
     })
+
+    //listner
+    socket.on('typing',function(data){ 
+        socket.broadcast.emit('typing', data); //broadcasting this msg to every over sinlge socket or client
+     })
 });
