@@ -3,9 +3,19 @@
 <head>
     <title></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
-    <link href="/style.css" ref="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body><h1>You see me?</h1></body>
-<script src="/chat.js"></script>
+<body>
+    <h1>You see me?</h1>
+    <div id="mario-chat">
+        <div id="chat-window">
+            <div id="output"></div>
+        </div>
+        <input id="handle" type="text" placeholder="handle">
+        <input id="message" type="text" placeholder="message">
+        <button id="send">Send</button>
+    </div>
+</body>
+<script src="./chat.js"></script>
 </html>
